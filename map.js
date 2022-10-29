@@ -16,16 +16,16 @@ map.on("style.load", () => {
 
 // ADD A GEOJSON SOURCE
 map.on("load", function () {
-  map.addSource("philly", {
+  map.addSource("heat", {
     type: "geojson",
     data: "./heatVulnerability.geojson",
   });
 
   // ADD A LAYER TO THE MAP
   map.addLayer({
-    id: "philly",
+    id: "heat",
     type: "fill",
-    source: "philly",
+    source: "heat",
     layout: {},
     paint: {
       "fill-color": [
